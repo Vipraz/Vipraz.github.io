@@ -1,6 +1,36 @@
-document.getElementById('article-form').addEventListener('submit', addArticle);
+document.getElementById('article-form').style.display = 'none'; // Hides the article form
 
 const articles = [
+    { 
+        title: "Article 1", 
+        link: "https://example.com", 
+        content: "Content of Article 1", 
+        author: "Author 1" 
+    },
+    { 
+        title: "Article 1", 
+        link: "https://example.com", 
+        content: "Content of Article 1", 
+        author: "Author 1" 
+    },
+    { 
+        title: "Article 1", 
+        link: "https://example.com", 
+        content: "Content of Article 1", 
+        author: "Author 1" 
+    },
+    { 
+        title: "Article 1", 
+        link: "https://example.com", 
+        content: "Content of Article 1", 
+        author: "Author 1" 
+    },
+    { 
+        title: "Article 1", 
+        link: "https://example.com", 
+        content: "Content of Article 1", 
+        author: "Author 1" 
+    },
     { 
         title: "Article 1", 
         link: "https://example.com", 
@@ -50,25 +80,6 @@ function addArticle(event) {
     displayArticles();
 }
 
-// Modify displayArticles function to include a remove button
-function displayArticles() {
-    const articles = getArticles();
-    const articleList = document.getElementById('article-list');
-    articleList.innerHTML = '';
-    articles.forEach((article, index) => {
-        const articleDiv = document.createElement('article');
-        articleDiv.innerHTML = `
-            <a href="${article.link}" target="_blank">
-                <img src="placeholder.jpg" alt="Placeholder Image">
-                <h2>${article.title}</h2>
-            </a>
-            <p>${convertUrlsToLinks(article.content)}</p>
-            <p><b>Author:</b> ${article.author}</p>
-            <button onclick="removeArticle(${index})">Remove Article</button>
-        `;
-        articleList.appendChild(articleDiv);
-    });
-}
 
 // Add removeArticle function
 function removeArticle(index) {
