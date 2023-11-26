@@ -1,17 +1,29 @@
 document.getElementById('article-form').addEventListener('submit', addArticle);
 
+const articles = [
+    { 
+        title: "Article 1", 
+        link: "https://example.com", 
+        content: "Content of Article 1", 
+        author: "Author 1" 
+    },
+    // Add more articles as needed
+];
+
 function getArticles() {
     return JSON.parse(localStorage.getItem('articles')) || [];
 }
 
 function displayArticles() {
-    const articles = getArticles();
     const articleList = document.getElementById('article-list');
     articleList.innerHTML = ''; // Clear existing articles
     articles.forEach(article => {
         const articleDiv = document.createElement('article');
         articleDiv.innerHTML = `
-            <h2>${article.title}</h2>
+            <a href="${article.link}" target="_blank">
+                <img src="placeholder.jpg" alt="Placeholder Image">
+                <h2>${article.title}</h2>
+            </a>
             <p>${convertUrlsToLinks(article.content)}</p>
             <p><b>Author:</b> ${article.author}</p>
         `;
