@@ -13,14 +13,15 @@ const articles = [
         link: "https://www.wired.com/story/doomscrolling-bad-news-mental-health/", 
         content: "Scrolling through social media can feel like a nightmare these days. You’re reading about the horrors of the Israel-Hamas war, and then you’re reading about the horrors of the war between Ukraine and Russia. You’re learning about the latest devastating climate news. Democracy is under threat in America. It can feel like everything is falling apart.", 
         author: "wired", 
-        imageSrc: "article2.jpg",
+        imageSrc: "article2.jpg"
     },  
     { 
-        title: "Article 1", 
-        link: "https://example.com", 
-        content: "Content of Article 1", 
-        author: "Author 1" 
-    },
+        title: "Amazon unveils Q, an AI-powered chatbot", 
+        link: "https://techcrunch.com/2023/11/28/amazon-unveils-q-an-ai-powered-chatbot-for-businesses/", 
+        content: "Unveiled during a keynote at Amazon’s re:Invent conference in Las Vegas this morning, Q — starting at $20 per user per year, now in public preview — can answer questions like “How do I build a web application using AWS?” Trained on 17 years’ worth of AWS knowledge, Q will offer a list of potential solutions along with reasons you might consider its proposals.", 
+        author: "Techcrunch",
+        imageSrc: "article3.jpg"
+    },  
     { 
         title: "Article 1", 
         link: "https://example.com", 
