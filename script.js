@@ -12,7 +12,7 @@ const articles = [
         title: "It's time to log off", 
         link: "https://www.wired.com/story/doomscrolling-bad-news-mental-health/", 
         content: "Scrolling through social media can feel like a nightmare these days. You’re reading about the horrors of the Israel-Hamas war, and then you’re reading about the horrors of the war between Ukraine and Russia. You’re learning about the latest devastating climate news. Democracy is under threat in America. It can feel like everything is falling apart.", 
-        author: "wired", 
+        author: "Wired", 
         imageSrc: "article2.jpg"
     },  
     { 
